@@ -5,7 +5,9 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 
-    <context:annotation-config></context:annotation-config>
-    <context:component-scan base-package="com.ramendu.config">
-    </context:component-scan>
+    <context:annotation-config />
+
+    <context:component-scan base-package="com.ramendu.dao" />
+
+
 </beans>
