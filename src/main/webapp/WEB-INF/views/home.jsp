@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+		 pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql" %>
 
@@ -7,18 +7,14 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-  <title>Insert title here</title>
+  <title>Booze-Dil</title>
+    <link href="${pageContext.request.contextPath}/static/css/main.css" rel = "stylesheett" type ="text/css"/>
 </head>
 <body>
-
-<sql:query var="rs" dataSource="jdbc/books">
-  SELECT "Name", "Password" FROM public."UserDB"
-</sql:query>
-
-<c:forEach var="row" items="${rs.rows}">
-  ID: ${row.Name}<br/>
-  Name: ${row.Password}<br/>
-</c:forEach>
-
+<center>
+    <h3 class="test">Booze-Dil!</h3>
+    <a href="${pageContext.request.contextPath}/login"><h5>Login</h5></a>
+    <a href="${pageContext.request.contextPath}/register"><h5>Register</h5></a>
+</center>
 </body>
 </html>
